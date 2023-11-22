@@ -9,11 +9,14 @@
 */
 /* Aquí definimos las Custom properties */
 
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 /* ----- FONTS -----------*/
 @font-face {
   font-family: "Neue Montreal";
   src: url("../fonts/NeueMontreal-Regular.woff2");
 }
+
 @font-face {
   font-family: "Neue Montreal-bold";
   src: url("../fonts/NeueMontreal-Bold.woff2");
@@ -22,10 +25,11 @@
 :root {
   --negro: #393939;
   --contrast-color: #ff000e;
+  --color-card: #171717;
   --section-padding: 6rem;
   /* Tipografía */
   --type-1: "Neue Montreal";
-  --type-2: "Neue Montreal-bold";
+  --type-2: "Bebas Neue";
 }
 /* Reseteamos los margin y paddings de todas las etiquetas */
 * {
@@ -157,13 +161,13 @@ svg {
 
 /* Configuramos la tipografía para toda la web */
 body {
-  background-color: #0e0e0e;
-  color: #efefef;
   padding: 0 1.5rem;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   min-height: 100vh;
+  background-color: #0e0e0e;
+  color: #fefefefe;
   font-size: 100%;
   font-family: var(--type-1), Arial, Helvetica, sans-serif;
   font-smooth: always;
