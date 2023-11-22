@@ -22,10 +22,7 @@
   font-size: 13px;
 }
 
-
-
 /* -- hero -- */
-
 .hero_home {
   display: flex;
   justify-content: end;
@@ -33,10 +30,10 @@
 }
 
 .text-hero-home {
-  width: 55%;
+  width: 600px;
   font-family: "Neue Montreal-bold";
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 46px;
   line-height: 1;
 }
 
@@ -125,4 +122,55 @@
 
 .icon-instagram {
   width: 30px;
+}
+
+@media (max-width: 990px) {
+  .list-products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    background-color: #0e0e0e;
+  }
+
+  .co-links-navigation {
+    display: none;
+  }
+
+  .hero_home {
+    padding-top: 7rem;
+  }
+
+  .list-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-product {
+    height: 300px;
+  }
+}
+
+@media (max-width: 646px) {
+  .text-hero-home {
+    width: 100%;
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .list-products {
+    grid-template-columns: 1fr;
+  }
+
+  .card-product {
+    height: 400px;
+  }
 }
