@@ -1,3 +1,45 @@
-body{
-    background-color: red;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.logo {
+  font-family: var(--type-2);
+  background-color: var(--contrast-color);
+  color: #fefefe;
+  transform: rotate(-15deg);
+  line-height: 1.2;
+  padding: 1px 6px;
+}
+
+.co-links-navigation {
+  display: flex;
+  gap: 1em;
+}
+
+.link-navigation {
+  font-size: 13px;
+}
+
+/* -- hero -- */
+
+.hero_home {
+  display: flex;
+  justify-content: end;
+  padding-top: 3rem;
+}
+
+.text-hero-home {
+  width: 55%;
+  font-family: var(--type-2);
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 1;
+}
+
+.text-hero-home .line{
+  display: flex;
+  justify-content: space-between;
 }
