@@ -25,15 +25,19 @@
 /* -- hero -- */
 .hero_home {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   padding-top: 3rem;
 }
 
+.text-small-hero {
+  font-size: 11px;
+}
+
 .text-hero-home {
-  width: 600px;
+  width: 700px;
   font-family: "Neue Montreal-bold";
   text-transform: uppercase;
-  font-size: 46px;
+  font-size: 60px;
   line-height: 1;
 }
 
@@ -133,6 +137,13 @@
   .list-products {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .hero_home {
+    padding-top: 7rem;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -148,10 +159,6 @@
 
   .co-links-navigation {
     display: none;
-  }
-
-  .hero_home {
-    padding-top: 7rem;
   }
 
   .list-products {
