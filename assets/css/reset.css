@@ -166,8 +166,8 @@ body {
   width: 100%;
   margin: 0 auto;
   min-height: 100vh;
-  background-color: #0e0e0e;
-  color: #fefefefe;
+  background-color: #fff;
+  color: #0e0e0e;
   font-size: 100%;
   font-family: var(--type-1), Arial, Helvetica, sans-serif;
   font-smooth: always;
@@ -175,10 +175,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-@media(max-width: 768px){
-  body{
+@media (max-width: 768px) {
+  body {
     padding: 0 10px;
   }
 }
